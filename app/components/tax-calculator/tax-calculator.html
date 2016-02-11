@@ -1,0 +1,7 @@
+<h2>Tax Calculator</h2>
+<div>Amount:
+  <input #amount (change)="0">
+</div>
+<div *ngIf="amount.value">
+  The tax is {{getTax(amount.value) | currency:'JPY':true:'1.2-2'}}
+</div>
