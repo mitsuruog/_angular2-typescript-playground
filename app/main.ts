@@ -1,6 +1,6 @@
 import {bootstrap} from 'angular2/platform/browser';
 import {ROUTER_PROVIDERS} from 'angular2/router';
-import {Logger} from './services/logger.service';
+import {Logger} from './common/services/logger.service';
 
 import {AppComponent} from './app.component';
 

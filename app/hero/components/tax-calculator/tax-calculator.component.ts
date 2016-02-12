@@ -3,7 +3,7 @@ import {TaxCalculatorService} from '../../services/tax-calculator.service';
 
 @Component({
   selector: 'tax-calculator',
-  templateUrl: 'app/components/tax-calculator/tax-calculator.html',
+  templateUrl: 'app/hero/components/tax-calculator/tax-calculator.html',
   providers: [TaxCalculatorService]
 })
 

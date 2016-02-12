@@ -1,7 +1,7 @@
 import {Component} from 'angular2/core';
 import {RouteConfig, ROUTER_DIRECTIVES} from 'angular2/router';
 
-import {HeroContainerComponent} from './components/hero-container/hero-container.component';
+import {HeroComponent} from './hero/hero.component';
 
 @Component({
   selector: 'my-app',
@@ -20,9 +20,8 @@ import {HeroContainerComponent} from './components/hero-container/hero-container
   {
     path: '/heroes',
     name: 'Heroes',
-    component: HeroContainerComponent,
-    useAsDefault: true
-  },
+    component: HeroComponent,
+  }
 ])
 
 export class AppComponent { }

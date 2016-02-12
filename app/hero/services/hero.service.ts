@@ -1,7 +1,7 @@
 import {Injectable} from 'angular2/core';
 import {Hero} from '../models/hero';
 import {HeroBackendService} from './hero-backend.service';
-import {Logger} from './logger.service';
+import {Logger} from '../../common/services/logger.service';
 
 @Injectable()
 export class HeroService {

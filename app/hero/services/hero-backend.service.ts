@@ -1,5 +1,5 @@
 import {Injectable, Type} from 'angular2/core';
-import {Logger} from './logger.service';
+import {Logger} from '../../common/services/logger.service';
 import {Hero} from '../models/hero';
 
 const HEROES = [

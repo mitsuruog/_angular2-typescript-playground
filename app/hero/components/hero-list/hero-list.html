@@ -2,5 +2,5 @@
 <p><i>Pick a hero from the list</i></p>
 <div *ngFor="#hero of heroes" (click)="selectHero(hero)">
   {{hero.name}}
-</div>
+ </div>
 <hero-detail *ngIf="selectedHero" [hero]="selectedHero"></hero-detail>
