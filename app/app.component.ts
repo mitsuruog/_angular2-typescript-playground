@@ -1,15 +1,28 @@
 import {Component} from 'angular2/core';
-import {HeroListComponent} from './components/hero-list/hero-list.component';
-import {TaxCalculatorComponent} from './components/tax-calculator/tax-calculator.component';
+import {RouteConfig, ROUTER_DIRECTIVES} from 'angular2/router';
+
+import {HeroContainerComponent} from './components/hero-container/hero-container.component';
 
 @Component({
   selector: 'my-app',
   template: `
-    <h1>My first Angular2 App</h1>   
-    <hero-list></hero-list>
-    <tax-calculator></tax-calculator>
+    <h1>Component Router</h1>
+    <nav>
+      <a [routerLink]="['Heroes']">Heroes</a>
+    </nav>   
+    <router-outlet></router-outlet>
   `,
-  directives: [HeroListComponent, TaxCalculatorComponent]
+  directives: [ROUTER_DIRECTIVES]
 })
+
+// TODO　ブラウザBackで戻らないんだけどなんで。。。
+@RouteConfig([
+  {
+    path: '/heroes',
+    name: 'Heroes',
+    component: HeroContainerComponent,
+    useAsDefault: true
+  },
+])
 
 export class AppComponent { }

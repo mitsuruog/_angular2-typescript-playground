@@ -1,6 +1,6 @@
 import {Injectable} from 'angular2/core';
 import {Hero} from '../models/hero';
-import {BackendService} from './backend.service';
+import {HeroBackendService} from './hero-backend.service';
 import {Logger} from './logger.service';
 
 @Injectable()
@@ -9,7 +9,7 @@ export class HeroService {
   private heroes: Hero[] = [];
 
   constructor(
-    private backend: BackendService,
+    private backend: HeroBackendService,
     private logger: Logger
    ) { }
 

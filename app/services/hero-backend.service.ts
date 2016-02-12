@@ -9,7 +9,7 @@ const HEROES = [
 ];
 
 @Injectable()
-export class BackendService {
+export class HeroBackendService {
 
   constructor(private logger: Logger) { }
 
